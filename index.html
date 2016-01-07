@@ -1,16 +1,12 @@
 <!doctype html>
-<html lang="en">	
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>ScriptEd Development Tools Lesson</title>
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/scripted.css" id="theme">	
-	<!--Add support for earlier versions of Internet Explorer -->
-	<!--[if lt IE 9]>
-	<script src="lib/js/html5shiv.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="css/theme/scripted.css" id="theme">
 </head>
- 
+
 <body>
 	<div class="reveal">
 		<div class="slides">
@@ -22,6 +18,43 @@
 					<li>Enter your GitHub username/password</li>
 				</ul>
 			</section>
+			<section>
+			<section>
+				<h2>Integrated Development Environment</h2>
+				<p><b>Imagine if...</b> you were building a wood box.</p>
+				<p>You had to go to one room to get the saw. Then, another room to get the wood. And another room to get the screws... And another room to get the screwdriver!</p>
+				<p><b>Wouldn't it be easier if everything was one place?</b></p>
+			</section>
+			<section>
+				<h2>Integrated Development Environment</h2>
+				<p>An <b>IDE</b> is an <b><u>I</u>ntegrated <u>D</u>evelopment <u>E</u>nvironment</b>.</p>
+				<p>It collects all the tools for a developer in one place.</p>
+				<p>As we design more complicated projects, an IDE will make our lives easier.</p>
+				<p><b>Cloud9 is our IDE!</b></p>
+			</section>
+		</section>
+			<section>
+				<section>
+					<h2>Cloud9</h2>
+					<ul>
+						<li>Cloud9 organizes each project as a <u>workspace</u>.</li>
+						<li>Workspaces contain all the files for our project.</li>
+						<li>Workspaces are <u>public</u>, so don't put anything private in them!</li>
+						<li>Always use your Github account to log into Cloud9</li>
+					</ul>
+			</section>
+			<section>
+				<h2>Cloud9</h2>
+				<p><b>Now we will move our MadLibs project to Cloud9.</b></p>
+				<p>We will:</p>
+				<ul>
+					<li>Create a new workspace.</li>
+					<li>Create a new page.</li>
+					<li>Preview our page.</li>
+				</ul>
+		</section>
+
+	</section>
 			<section>
 			<section>
 				<h2>Create a New Workspace</h2>
@@ -36,6 +69,11 @@
 				<img src="c9-newfile.png"/>
 			</section>
 			<section>
+				<h2>Copy your MadLibs assignment</h2>
+				<p>Open your MadLibs page and copy the HTML into the new file.</p>
+				<p>If you haven't started on one yet, use this JSBin:<br/><a href="http://jsbin.com/luheqo/edit">http://jsbin.com/luheqo/edit</a></p>
+			</section>
+			<section>
 			<section>
 				<h2>Save File</h2>
 				<img src="c9-savefile.png"/>
@@ -48,11 +86,89 @@
 				<h2>Live Preview</h2>
 				<img src="c9-livepreview.png"/>
 			</section>
+			<section>
+				<h2>It's Broken!</h2>
+				<p><b>We didn't add the Javascript!</b></p>
+				<p>Let's:</p>
+				<ul>
+					<li>Copy the Javascript into a new file in Cloud9 called madlibs.js</li>
+					<li>Include the Javascript in our webpage<br/><i>(Hint: Try placing a "script" tag inside the "head" tag with a "src" attribute set to the script file name!)</i></li>
+					<li>Test to make sure it works!</li>
+				</ul>
+			</section>
+			<section>
+			<section>
+				<h2>Source Code Management</h2>
+				<p><b>What if you couldn't undo!?</b></p>
+				<p class="fragment">Programmers make mistakes!</p>
+				<p class="fragment">We keep old versions of our code to refer to later.</p>
+			</section>
+			<section>
+				<h2>Source Code Management</h2>
+				<p><b>How do you share files?</b></p>
+				<p class="fragment">When you are in a team, everyone needs to stay in sync.</p>
+				<p class="fragment">It's not easy to share files and avoid stepping on eachother's toes!</p>
+			</section>
+			<section>
+				<h2>Source Code Management</h2>
+				<p><b>What happens when multiple people work on the same file?</b></p>
+				<p class="fragment">You can do it like a group project - everyone contributes their part and it is all combined at the end.</p>
+				<p class="fragment">When you are working on hundreds of files, you need the computer to help combine the changes!</p>
+			</section>
+			<section>
+				<h2>Source Code Management</h2>
+				<p><b>We need something that...</b></p>
+				<ul>
+					<li>stores all the versions of our source code.</li>
+					<li>shares our source code with our team</li>
+					<li>combines our team's work together</li>
+				<ul>
+				<p class="fragment"><b>A <u>S</u>ource <u>C</u>ode <u>M</u>anagement system (SCM)!</b></p>
+			</section>
+
+		</section>
+		<section>
+				<section>
+					<h2>Git</h2>
+					<p><b>The SCM we will use is called Git.</b></p>
+					<p>In Git, there are a few terms to learn:</p>
+					<ul>
+						<li><b>"repository"</b>: a collection of all your source code with all the versions</li>
+						<li><b>"commit"</b>: a saved version of changes to your source code</li>
+						<li><b>"clone"</b>: make a copy of the repository</li>
+						<li><b>"merge"</b>: combine changes from two different repositories into one</li>
+					<ul>
+				</section>
+				<section>
+					<h2>Github</h2>
+					<p>Now we have a way to clone repositories and merge them.</p>
+					<p>We need a way to keep a "master" copy of our repository that people can access.</p>
+					<p class="fragment"><b>That is what Github does!</b></p>
+				</section>
+				<section>
+					<h2>How to Use Git</h2>
+					<ul>
+						<li>You need the <u>command line</u></li>
+						<li>Instead of clicking on things, you type commands</li>
+						<li>After you type the command, press enter</li>
+						<li>The results of the command appear below!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Git Commands</h2>
+					<ul>
+						<li><b>git init</b> - create a new repository</li>
+						<li><b>git status</b> - see what is being tracked and not tracked</li>
+						<li><b>git add <i>&lt;filename&gt;</i></b> - track file</li>
+       			<li><b>git commit -m "message"</b> - commit changes</li>
+					</ul>
+				</section>
+			</section>
 			</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
- 
+
 	<script>
 		// Required, even if empty.
 		Reveal.initialize({
